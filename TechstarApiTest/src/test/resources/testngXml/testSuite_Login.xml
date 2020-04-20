@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Techstar自动化测试">
+
+    <listeners>
+        <!--失败重跑-->
+        <listener class-name="com.techstar.exceptions.FailedRetryListener"/>
+        <!--<listener class-name="com.techstar.exceptions.TestngListener"/>-->
+        <!--测试报告-->
+        <listener class-name="com.techstar.report.ExtentTestNGIReporterListener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="tester">
+
+        <classes>
+            <class name="TestCases.Login"/>
+        </classes>
+
+    </test>
+
+</suite>

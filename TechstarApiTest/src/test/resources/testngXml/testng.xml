@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="多个suite测试">
+
+    <listeners>
+        <!--失败重跑-->
+        <listener class-name="com.techstar.exceptions.FailedRetryListener"/>
+        <listener class-name="com.techstar.report.ExtentTestNGIReporterListener" />
+ 
+    </listeners>
+
+    <suite-files>
+        <suite-file path="testSuite_Login.xml"></suite-file>
+        <suite-file path="testSuite_Login2.xml"></suite-file>
+    </suite-files>
+
+</suite>

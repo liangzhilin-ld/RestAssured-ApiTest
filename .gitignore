@@ -1,0 +1,9 @@
+/target
+/test-output
+/bin/
+# TechstarApiTest
+TechstarApiTest/.project
+TechstarApiTest/.classpath
+TechstarApiTest/.settings/
+TechstarApiTest/.gitignore
+TechstarApiTest/Logs/*.log.*
